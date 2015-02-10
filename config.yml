@@ -1,0 +1,5 @@
+sentinel_ip: "127.0.0.1"
+sentinel_port: "26379"
+twemproxy_config_file: "nutcracker.yml"
+nutcracker_restart_command: "supervisorctl restart nutcracker" # or /etc/init.d/twemproxy restart
+log_file: "twemsentinel.log"

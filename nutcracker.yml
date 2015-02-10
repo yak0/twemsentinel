@@ -1,0 +1,15 @@
+#example nutcracker config file
+redis1:
+  auto_eject_hosts: true
+  distribution: ketama
+  hash: fnv1a_64
+  listen: 0.0.0.0:9999
+  redis: true
+  server_failure_limit: 1
+  server_retry_timeout: 2000
+  servers:
+   - 127.0.0.1:16379:1
+   - 127.0.0.1:16380:1
+   - 127.0.0.1:16381:1
+
+  timeout: 400
